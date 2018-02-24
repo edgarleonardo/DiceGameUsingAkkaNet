@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  dicedistributedgameapplication:
+    image: dicedistributedgameapplication
+    build:
+      context: .
+      dockerfile: DiceDistributedGameApplication/Dockerfile
