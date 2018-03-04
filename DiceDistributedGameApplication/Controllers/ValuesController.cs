@@ -2,13 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Akka.Actor;
+using DiceDistributedGame.Actors.Actors;
+using DiceDistributedGameApplication.Hubs;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 
 namespace DiceDistributedGameApplication.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        private IHubContext<NotificationHub> _hub;
+        private ActorSystem _actorSystem;
+        public ValuesController(IHubContext<NotificationHub> hub, ActorSystem actorSystem)
+        {
+            this._hub = hub;
+            this._actorSystem = actorSystem;
+        }
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -23,9 +34,9 @@ namespace DiceDistributedGameApplication.Controllers
             return "value";
         }
 
-        // POST api/values
+        [Route("api/CreateGame")]
         [HttpPost]
-        public void Post([FromBody]string value)
+        public void CreateGame([FromBody]string name)
         {
         }
 

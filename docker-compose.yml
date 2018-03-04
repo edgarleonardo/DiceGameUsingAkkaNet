@@ -6,3 +6,17 @@ services:
     build:
       context: .
       dockerfile: DiceDistributedGameApplication/Dockerfile
+
+  dicedistributedgameapplication.console:
+    image: dicedistributedgameapplication.console
+    build:
+      context: .
+      dockerfile: DiceDistributedGameApplication.Console/Dockerfile
+
+
+  dicedistributedgameapplication.coreclient:
+    image: dicedistributedgameapplication.coreclient
+    build:
+      context: .
+      dockerfile: DiceDistributedGameApplication.CoreClient/Dockerfile
+

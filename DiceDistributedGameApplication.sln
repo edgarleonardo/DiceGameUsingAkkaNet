@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceDistributedGameApplication", "DiceDistributedGameApplication\DiceDistributedGameApplication.csproj", "{480404D6-520A-4C52-9BA5-7EE8A63500C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiceDistributedGameApplication", "DiceDistributedGameApplication\DiceDistributedGameApplication.csproj", "{480404D6-520A-4C52-9BA5-7EE8A63500C5}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8E1B333F-6516-4344-865D-CE858296FCE5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiceDistributedGame.Actors", "DiceDistributedGame.Actors\DiceDistributedGame.Actors.csproj", "{EE34E1C1-B3C5-4E2A-80BF-2759D7023975}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiceDistributedGame.Model", "DiceDistributedGame.Model\DiceDistributedGame.Model.csproj", "{7A92F484-C6F7-43AF-B5B1-EAB994FF69B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiceDistributedGameApplication.Test", "DiceDistributedGameApplication.Test\DiceDistributedGameApplication.Test.csproj", "{088B278F-1D9F-4C7F-A141-5263BC62CDAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiceDistributedGameApplication.Console", "DiceDistributedGameApplication.Console\DiceDistributedGameApplication.Console.csproj", "{D0B13249-A27D-453C-9CED-F6AF2B3CF336}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{8E1B333F-6516-4344-865D-CE858296FCE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E1B333F-6516-4344-865D-CE858296FCE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E1B333F-6516-4344-865D-CE858296FCE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE34E1C1-B3C5-4E2A-80BF-2759D7023975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE34E1C1-B3C5-4E2A-80BF-2759D7023975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE34E1C1-B3C5-4E2A-80BF-2759D7023975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE34E1C1-B3C5-4E2A-80BF-2759D7023975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A92F484-C6F7-43AF-B5B1-EAB994FF69B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A92F484-C6F7-43AF-B5B1-EAB994FF69B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A92F484-C6F7-43AF-B5B1-EAB994FF69B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A92F484-C6F7-43AF-B5B1-EAB994FF69B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088B278F-1D9F-4C7F-A141-5263BC62CDAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088B278F-1D9F-4C7F-A141-5263BC62CDAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088B278F-1D9F-4C7F-A141-5263BC62CDAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088B278F-1D9F-4C7F-A141-5263BC62CDAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0B13249-A27D-453C-9CED-F6AF2B3CF336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0B13249-A27D-453C-9CED-F6AF2B3CF336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0B13249-A27D-453C-9CED-F6AF2B3CF336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0B13249-A27D-453C-9CED-F6AF2B3CF336}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
